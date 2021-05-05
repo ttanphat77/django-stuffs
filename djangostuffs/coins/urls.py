@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.urls import path
-from .views import CoinView
+from djangostuffs.coins import views
 
 urlpatterns = [
-    path('coin', CoinView.as_view())
+    path('', views.get_coin),
 ]
